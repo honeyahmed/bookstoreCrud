@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+
+        <div class="conatiner-fluid d-flex align-items-center px-5">
+            <h3 class="me-2">Book Store</h3>
+            <img src="images/open-book.png" alt="">
+        </div>
+        <div class="container pt-5 w-75">
+
+             
+            <input type="text" name="Book Name" id="bookNameInp" placeholder="Enter book name..." class="form-control ">
+            <small id="nameError d-none"></small>
+            <input type="text" name="Book Author" id="bookAuthorInp" placeholder="Enter book author name..." class="form-control mt-3">
+            <small id="authorError d-none"></small>
+            <input type="text" name="Book Price" id="bookPriceInp" placeholder="Enter book price..." class="form-control mt-3">
+            <small id="priceError d-none"></small>
+            <input type="text" name="Book Genre" id="bookGenreInp" placeholder="Enter book genre..." class="form-control mt-3">
+            <small id="genreError d-none"></small>
+            <div class="d-flex justify-content-center mt-4">
+            <button class="btn mb-2 mb-md-0 btn-primary addBtn" id="addBtn" onclick="addBook()">  Add new book  </button>  
+            </div>
+
+        </div>
+
+        <div class="container w-75 pb-5">
+            <input type="text" name="Search" id="search" placeholder="Search..." onkeyup="search(this.value)" class="form-control mt-5 mb-5" >
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Book Name</th>
+                      <th scope="col">Book Author</th>
+                      <th scope="col">Book Price</th>
+                      <th scope="col">Book Genre</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableData">
+                    
+                  </tbody>
+            </table>
+
+        </div>
+        <div class="light-container d-none justify-content-center align-items-center ">
+        <div class="light-box shadow-sm">
+            <!-- <h5>You deleted an Item</h5> -->
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <img src="images/bin.png" alt="" class="img-fluid py-2  ps-3">
+                </div>
+                <div class="col-md-8 d-flex justify-content-center align-items-center">
+                    <h6 class="fs-5" id="deletedItem"> </h6>
+                 </div>
+            </div>
+
+            <i id="closeIcon"  class="fas fa-times shadow-sm"></i>
+        </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

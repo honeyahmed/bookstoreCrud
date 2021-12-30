@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conatiner-fluid{
+    background-color: #435d7d;
+    height: 10vh;
+    color: white;
+}
+.conatiner-fluid h3{
+    font-weight: 700;
+
+}
+.conatiner-fluid img{
+    margin-bottom: 0.3rem;
+    width: 30px;
+    height: 25px;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.4)!important;
+}
+input:focus{
+    border-color:none !important;
+    border: none !important;;
+    box-shadow: 0 0 10px rgba(21, 131, 1, 0.6)!important;
+    outline: none!important;
+
+}
+ .addBtn{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    border-radius: 18px!important;
+    border: RGB(129, 209, 126)!important;
+    background-color: RGB(129, 209, 126)!important;
+ }
+ .addBtn:hover{
+     background-color: RGB(129, 200, 95)!important;
+     ;
+ }
+ #updateIcon{
+     color: #ffc720;
+     cursor: pointer;
+ }
+ #deleteIcon{
+     color: red;
+     cursor: pointer;
+ }
+ .light-container{
+     background-color: rgba(0, 0, 0, 0.6);
+     position: fixed;
+     top:0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+ }
+ .light-box{
+     background-color: white;
+     width: 30%;
+     height: 250px;
+     position: relative;
+     border-radius: 9px;
+ }
+ #closeIcon{
+     color: rgb(170, 0, 0);
+     position: absolute;
+     top:8px;
+     right: 10px;
+     font-size: 22px;
+     cursor: pointer;
+
+
+ }
+ .update{
+     font-size: 10px;
+ }
